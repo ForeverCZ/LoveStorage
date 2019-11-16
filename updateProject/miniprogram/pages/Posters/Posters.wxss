@@ -1,0 +1,28 @@
+page {
+  background: #ecebeb;
+}
+
+.posters-wrap {
+  width: 240px;
+  height: 350px;
+  background: transparent;
+  margin: 170rpx auto 0 auto;
+}
+
+.canvasPoster {
+  width: 240px;
+  height: 350px;
+}
+
+.shareBtn {
+  margin-top: 110rpx;
+  display: flex;
+  align-items: center;
+}
+
+.shareBtn button {
+  height: 70rpx;
+  color: #fff;
+  line-height: 70rpx;
+  background: #fe824f;
+}

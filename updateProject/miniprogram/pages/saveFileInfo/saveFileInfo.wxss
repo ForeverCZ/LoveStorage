@@ -1,0 +1,182 @@
+page {
+  padding: 20rpx;
+  padding-top: 0;
+  background: rgba(227, 255, 206, 0.514);
+}
+
+/* 存储量 */
+
+.saveFileCount {
+  padding: 0 10rpx 0 10rpx;
+  background: rgba(0, 0, 0, 0.2);
+  width: 710rpx;
+  position: fixed;
+  z-index: 99;
+  bottom: 0rpx;
+  border-radius: 12rpx;
+  height: 70rpx;
+}
+
+.saveFile-contenTop {
+  display: flex;
+  padding-bottom: 5rpx;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.saveFile-contenTop text {
+  color: #000;
+  font-weight: bold;
+  font-size: 30rpx;
+}
+
+.saveFile-contenTop view {
+  color: #fff;
+  font-size: 28rpx;
+}
+
+/* 文件容器 */
+
+.file-wrap {
+  padding-top: 5rpx;
+}
+
+.file-item {
+  padding: 0rpx 2rpx 10rpx 2rpx;
+  margin-bottom: 30rpx;
+  border-radius: 12rpx;
+  box-shadow: 2rpx 4rpx 14rpx 4rpx rgb(168, 163, 163);
+}
+
+.content-top {
+  width: 100%;
+  background: moccasin;
+  color: #000;
+  border-radius: 19rpx 19rpx 0 0;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.content-top-image {
+  flex: 2;
+  width: 30rpx;
+  height: 60rpx;
+}
+
+.ontent-top-fileName {
+  color: #000;
+  flex: 1;
+  font-size: 35rpx;
+}
+
+.ontent-top-fileNameContent {
+  color: #000;
+  flex: 13;
+  font-size: 28rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.conten-bottom {
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  height: 60rpx;
+  line-height: 60rpx;
+  background: rgba(255, 228, 181, 0.526);
+  color: #000;
+  font-size: 30rpx;
+  width: 180rpx;
+  border-radius: 10rpx;
+}
+
+.conten-middle {
+  padding-top: 10rpx;
+  color: #000;
+  display: flex;
+  font-size: 28rpx;
+  align-items: center;
+}
+
+.conten-middle-timeName {
+  flex: 3.9;
+  text-align: right;
+}
+
+.conten-middle-timeNameContent {
+  flex: 3;
+  text-align: left;
+}
+
+.loding {
+  text-align: center;
+  padding: 10rpx;
+  color: #ccc;
+}
+
+/* 置顶 */
+
+.top-wrap {
+  text-align: center;
+  position: fixed;
+  width: 56rpx;
+  height: 79rpx;
+  right: 20rpx;
+  bottom: 150rpx;
+}
+
+.top-wrap image {
+  width: 56rpx;
+  height: 79rpx;
+}
+
+/* 倒序 */
+
+.order-wrap {
+  text-align: center;
+  position: fixed;
+  right: 20rpx;
+  top: 5rpx;
+  width: 56rpx;
+  height: 56rpx;
+}
+
+.order-wrap image {
+  width: 56rpx;
+  height: 56rpx;
+}
+
+/* .one {
+  background: linear-gradient(to right, #f43f3b, #ec008c);
+  box-shadow: 3rpx 3rpx 15rpx 1rpx #ec008c;
+}
+
+.two {
+  background: linear-gradient(to right, #f79700, #ed1c24);
+  box-shadow: 3rpx 3rpx 15rpx 1rpx #ed1c24;
+}
+
+.three {
+  background: linear-gradient(to right, #39b54a, #8dc63f);
+  box-shadow: 3rpx 3rpx 15rpx 1rpx #8dc63f;
+}
+
+.four {
+  background: linear-gradient(to right, #0081ff, #1cbbb4);
+  box-shadow: 3rpx 3rpx 15rpx 1rpx #1cbbb4;
+}
+
+.five {
+  background: linear-gradient(to right, #9000ff, #5e00ff);
+  box-shadow: 3rpx 3rpx 15rpx 1rpx #5e00ff;
+}
+
+.six {
+  background: linear-gradient(to right, #ec0084, #6739b6);
+  box-shadow: 3rpx 3rpx 15rpx 1rpx #6739b6;
+} */

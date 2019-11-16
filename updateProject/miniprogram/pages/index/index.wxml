@@ -1,0 +1,46 @@
+<!-- 功能列表 -->
+<view class="conten-wrap">
+  <view bindtap="toSaveFile" class="saveFile">
+    <text>存文件</text>
+  </view>
+</view>
+
+<!-- 客服组件 -->
+<view class="kfzj">
+  <button open-type="contact" bindcontact="handleContact">
+    <image src="../../images/kf.png"></image>
+  </button>
+</view>
+
+<!-- 使用说明 -->
+<view wx:if="{{instructions}}" class="instructions-wap">
+  <view class="instructions-conten">
+    <view class="content">
+      <view class="title">
+        <text>1.功能介绍</text>
+      </view>
+    </view>
+    <view class="content-text">
+      <text>1.主要用与存储学习和工作中的小文件</text>
+      <text>2.简单的可视化管理</text>
+      <text>2.方便查找和预览</text>
+      <text>4.客服在线求撩</text>
+      
+    </view>
+
+    <view class="content">
+      <view class="title">
+        <text>2.注意事项</text>
+      </view>
+    </view>
+    <view class="content-text">
+      <text>1.文件最好控制在10M之内</text>
+      <text>2.一次上传数量控制在1-6个文件</text>
+    </view>
+    <view class="instructions-btn">
+      <button bindtap="instructionsBtn">
+        知道了({{timeCount}})s
+      </button>
+    </view>
+  </view>
+</view>

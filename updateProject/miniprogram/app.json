@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/saveFile/saveFile",
+    "pages/saveFileInfo/saveFileInfo",
+    "pages/me/me",
+    "pages/memorandum/memorandum",
+    "pages/memorandumInfo/memorandumInfo",
+    "pages/Posters/Posters",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "爱存储",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/saveFile/saveFile",
+        "text": "首页",
+        "iconPath": "images/index-none.png",
+        "selectedIconPath": "images/index-select.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/me-none.png",
+        "selectedIconPath": "images/me-select.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

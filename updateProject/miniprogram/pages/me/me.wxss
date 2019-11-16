@@ -1,0 +1,92 @@
+page {
+  background-color: #f4f4f4;
+}
+
+.amountBg {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  background-color: #5495e6;
+  align-items: center;
+}
+
+.img {
+  overflow: hidden;
+  display: block;
+  margin-left: 20px;
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+}
+
+.account {
+  width: 70%;
+  color: #fff;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.nick-name {
+  font-family: 'Mcrosoft Yahei';
+  font-size: 16px;
+}
+
+.address {
+  font-size: 13px;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  height: 50px;
+  align-items: center;
+}
+
+.icon {
+  width: 50px;
+  text-align: center;
+}
+
+.itemName {
+  width: 40%;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.line {
+  height: 10px;
+}
+
+.hr {
+  height: 1px;
+  opacity: 0.2;
+}
+
+.right {
+  width: 40%;
+  text-align: right;
+}
+
+.opr {
+  color: #5495e6;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.rightShare {
+  width: 40%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+}
+
+button::after {
+  border: none;
+}
+
+button {
+  background: transparent;
+}

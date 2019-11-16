@@ -1,0 +1,79 @@
+<!-- 添加成功遮罩层 -->
+<!-- <view class="animition" wx:if="{{animition}}">
+  <text>{{animitionText}}</text>
+</view> -->
+
+<!-- 文件上传区 -->
+<view class="saveFile-wrap">
+  <!-- 上传区 -->
+  <view class="saveFile-img" bindtap="chooseMessageFile">
+    <image src="../../images/addFile.png"></image>
+    <view class="chooseFileText">从群聊或朋友中选择文件</view>
+    <!-- 建议区 -->
+    <view class="Description-wrap">
+      <text class="saveFile-Description">*支持文件类型doc、docx、xls、xlsx、ppt、pptx、pdf</text>
+    </view>
+  </view>
+
+
+  <!-- 按钮 -->
+  <view class="btn">
+    <button bindtap="toUploadFile" class="saveFile-btn1">上传</button>
+    <button bindtap="toViewAll" class="saveFile-btn2">文件列表</button>
+  </view>
+</view>
+
+
+<!-- 文件选择列表 -->
+<view wx:if="{{chooseMessageFiles.length>0}}" class="chooseFileList-warp">
+  <text class="file-title">文件选择列表</text>
+  <block wx:for="{{chooseMessageFiles}}" wx:key="{{index}}">
+    <text class="fileList">({{index+1}}.){{item.name}}</text>
+  </block>
+</view>
+
+<!-- 文件类型格式不正确 -->
+<view wx:if="{{fileType}}" class="fileErro">
+  不支持.{{fileType}}文件类型
+</view>
+
+
+<!-- 客服组件 -->
+<view class="kfzj">
+  <button open-type="contact" bindcontact="handleContact">
+    <image src="../../images/kf.png"></image>
+  </button>
+</view>
+
+<!-- 使用说明 -->
+<view wx:if="{{instructions}}" class="instructions-wap">
+  <view class="instructions-conten">
+    <view class="content">
+      <view class="title">
+        <text>1.功能介绍</text>
+      </view>
+    </view>
+    <view class="content-text">
+      <text>1.每人100M存储空间请合理使用及时清理</text>
+      <text>2.主要用与存储学习和工作中的小文件</text>
+      <text>3.简单的可视化管理</text>
+      <text>4.客服在线求撩</text>
+
+    </view>
+
+    <view class="content">
+      <view class="title">
+        <text>2.注意事项</text>
+      </view>
+    </view>
+    <view class="content-text">
+      <text>1.每次选择文件最好不要超过20M</text>
+      <text>2.一次上传数量控制在1-3个文件</text>
+    </view>
+    <view class="instructions-btn">
+      <button bindtap="instructionsBtn">
+        知道了({{timeCount}})s
+      </button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<!-- 创建画布 -->
+<view hidden="{{show}}">
+  <view  class="posters-wrap">
+    <canvas class="canvasPoster" canvas-id="shareImg"></canvas>
+  </view>
+
+  <view class="shareBtn">
+    <button bindtap="shareFriendBtn">分享给朋友</button>
+  </view>
+</view>

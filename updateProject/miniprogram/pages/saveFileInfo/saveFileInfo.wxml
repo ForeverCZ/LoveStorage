@@ -1,0 +1,51 @@
+<!-- 存储量表示 -->
+
+<view class="saveFileCount">
+  <view class="saveFile-contenTop">
+    <text>存储量</text>
+    <view>已使用{{alreadyUseCount}}M/{{allCount}}M</view>
+  </view>
+  <view class="saveFile-contenBottom">
+    <progress percent="{{alreadyUseCount}}" stroke-width="8" border-radius="13"></progress>
+  </view>
+</view>
+
+<!-- 文件列表容器 -->
+<view class="file-wrap">
+  <!-- 文件类目 -->
+  <view class="file-item" wx:for="{{fileDatas}}" wx:key="{{index}}">
+    <view class="content-top">
+      <image class="content-top-image" src="../../images/top-image.png"></image>
+      <text class="ontent-top-fileName">{{index+1}}:</text>
+      <view class="ontent-top-fileNameContent">{{item.fileName}}</view>
+    </view>
+    <view class="conten-middle">
+      <text class="conten-middle-timeName">上传日期：</text>
+      <text class="conten-middle-timeNameContent">{{item.time}}</text>
+    </view>
+    <view class="conten-bottom">
+      <button data-id="{{index}}" bindtap="previewFile" class="bt1 btn">预览</button>
+      <button data-id="{{index}}" bindtap="deleteFile" class="bt2 btn">删除</button>
+      <button data-id="{{index}}" bindtap="copyFileLink" class="bt3 btn">分享链接</button>
+    </view>
+  </view>
+</view>
+
+<!-- 底部正在加载提示 -->
+<view class="loding" hidden="{{!lodingMore}}">
+  正在加载更多..
+</view>
+
+<!-- 底部已加载完成提示 -->
+<view class="loding" hidden="{{!lodingOverAll}}">没有更多数据了</view>
+<!-- </scroll-view> -->
+
+<!-- 置顶 -->
+<view hidden="{{!hidden}}" bindtap="toTop" class="top-wrap">
+  <image src="../../images/top.png"></image>
+</view>
+
+<!-- 按时间顺序查询查询 -->
+<view wx:if="{{fileDatas.length}}" bindtap="invertedOrder" class="order-wrap">
+  <image src="../../images/order.png"></image>
+</view>

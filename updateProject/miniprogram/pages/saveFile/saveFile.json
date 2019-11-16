@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "文件上传",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}
