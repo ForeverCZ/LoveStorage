@@ -3,10 +3,7 @@
     "pages/saveFile/saveFile",
     "pages/saveFileInfo/saveFileInfo",
     "pages/me/me",
-    "pages/memorandum/memorandum",
-    "pages/memorandumInfo/memorandumInfo",
-    "pages/Posters/Posters",
-    "pages/index/index"
+    "pages/Posters/Posters"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
